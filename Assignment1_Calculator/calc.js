@@ -4,10 +4,10 @@ function ans(){
     // Checking input is a number or not.
     try{
         if(isNaN(n1)){
-            throw "Error : First input is not a number or it is empty"
+            throw "First input is not a number or it is empty"
         }
         if(isNaN(n2)){
-            throw "Error : Second input is not a number or it is empty"
+            throw "Second input is not a number or it is empty"
         }
     }
     catch(error){
@@ -35,7 +35,7 @@ function ans(){
         case 4:
             try{//Checking value of divisor. It must not be 0.
                 if(n2===0){
-                    throw "Error : Number cannot be divided by 0";
+                    throw "Number cannot be divided by 0";
                 }
                 res = divide(n1,n2);
             }
@@ -45,7 +45,7 @@ function ans(){
             }
             break;
         default :// If operator is not selected error message will be displayed.
-            document.getElementById("error").innerHTML = "Error : Operator not selected";
+            document.getElementById("error").innerHTML = "Operator not selected";
             return;
     }
     // Functions for every operator 
