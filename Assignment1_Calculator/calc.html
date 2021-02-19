@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+<body>
+    <form>
+        <table class="table">
+            <tr>
+                <td colspan="2">
+                    <label for="num1">Enter First number :</label>
+                    <input type="text" name="number" id="num1"></input>
+                </td>
+                <td colspan="2">
+                    <label for="num2">Enter Second number :</label>
+                    <input type="text" name="number" id="num2"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="add">Add ( + )</label>
+                    <input type="radio" name="operator" id="add" value="1"/>
+                </td>
+                <td>
+                    <label for="subtract">Subtract ( - )</label>
+                    <input type="radio" name="operator" id="subtract" value="2"/>
+                </td>
+                <td>
+                    <label for="mul">Multiply ( &#215; )</label>
+                    <input type="radio" name="operator" id="mul" value="3"/>
+                </td>
+                <td>
+                    <label for="divide">Divide ( &#247; )</label>
+                    <input type="radio" name="operator" id="divide" value="4"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" name="Answer" value="ANSWER" onclick="ans()"/>
+                </td>
+                <td colspan="2">
+                    <label for="res">Result</label>
+                    <input type="text" name="result" id="result" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><div id="error">No Error</div></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
