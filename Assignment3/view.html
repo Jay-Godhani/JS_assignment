@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Menu to toggle between view edit and add details page -->
+    <div id="menu">
+        <a href="./add.html"><input type="button" name="edit-details" id="add-details" value="Add new Details"/></a>
+        <a href="./edit.html"><input type="button" name="edit-details" id="edit-details" value="Edit Details"/></a>
+        <a href="./view.html"><input type="button" name="edit-details" id="View-details" value="View Details"/></a>
+    </div>
+    <!-- Used to take user Input to determine which entity should be displayed -->
+    <div>
+        <label for="search">Enter EmployeeID to view Details :</label>
+        <input type="text" name="search" id="search">
+    </div>
+    <div><button id="search-detail">Search</button></div>
+    <!-- For displaying Search Details -->
+    <div id="emp-details">
+        <p id="seached-name"></p>
+        <p id="seached-address"></p>
+        <p id="seached-ID"></p>
+        <p id="seached-designation"></p>
+    </div>
+    <!-- For showing Feedback of process and error message -->
+    <div id="view-error"></div>
+    <script src="./view.js" type="module"></script>
+</body>
+</html>

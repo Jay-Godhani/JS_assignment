@@ -1,0 +1,19 @@
+#menu ,#menu input{
+    text-align: center;
+    font-size: large;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+div{
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+}
+label{
+    padding: 0px 10px 0px 10px;
+}
+.details-view-editing{
+    display: none;
+}
+.error-hide{
+    display: none;
+}

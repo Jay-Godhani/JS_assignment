@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>    
+    <!-- Menu to toggle between view edit and add details page -->
+    <div id="menu">
+        <a href="./add.html"><input type="button" name="edit-details" id="add-details" value="Add new Details"/></a>
+        <a href="./edit.html"><input type="button" name="edit-details" id="edit-details" value="Edit Details"/></a>
+        <a href="./view.html"><input type="button" name="edit-details" id="View-details" value="View Details"/></a>
+    </div>
+    <!-- For taking inputs from user -->
+    <div>
+            <div>
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter your name"/>
+            </div>
+            <div>
+                <label for="address">Address :</label>
+                <textarea id="address" cols="20" rows="5" placeholder="Enter your address"></textarea>
+            </div>
+            <div>
+                <label for="emp-id">Employee ID :</label>
+                <input type="text" id="emp-id" placeholder="Enter employee ID"/>
+            </div>
+            <div>
+                <label for="Designation">Select Designation :</label><br/><br/>
+                <input type="radio" name="Designation" value="Junior Developer" id="jr-dev"/>
+                <label for="jr-dev">Junior Developer</label><br/>
+                <input type="radio" name="Designation" value="Senior Developer" id="sr-dev"/>
+                <label for="sr-dev">Senior Developer</label><br/>
+                <input type="radio" name="Designation" value="Team Leader" id="team-leader"/>
+                <label for="team-leader">Team Leader</label>
+            </div>
+            <div>
+                <input type="button" name="adddetails" id="add" value="Add Details">
+            </div>
+        <div class="add-feedback"><p id="feedback"></p></div>
+    </div>
+    <script src="./add.js" type="module"></script>
+</body>
+</html>
